@@ -33,6 +33,8 @@ def scraper1(url, driver):
 
         button = driver.find_elements("xpath", '//*[@id="OMS.Customers Summary"]')
 
+        page_source = {}
+
         if button:
             wait = WebDriverWait(driver, 10)
             label = wait.until(
